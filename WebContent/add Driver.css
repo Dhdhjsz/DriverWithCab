@@ -1,0 +1,109 @@
+.account-page{
+    padding: 100px ,0;
+    background: radial-gradient(#fff, #700298);
+}
+.form-container-1{
+    background: #fff;
+        width: 344px;
+        height: 580px;
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+        margin: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        overflow: hidden;
+        overflow-y: scroll;
+}
+.form-container-1 span{
+    font-weight: bold;
+        padding: 0 10px;
+        color: #555;
+        cursor: pointer;
+        /* width: 140px; */
+        display: inline-block;
+}
+.form-container-1 form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    /* transition: transform 1s; */
+
+}
+#Indicator{
+    width: 144px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+form a{
+    font-size: 12px
+}
+.driver-with-own-vehicle{
+    position: inline;
+    font-size: 10px;
+    
+}
+.checkbox{
+    height: 20px;
+    width: 20px;
+}     
+.btn-2{
+    padding: 10px 60px;
+    /* padding: 8px 30px; */
+    background:#ff523b ;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font: size 22px; 
+    font-weight: 500;
+    border-radius: 30px;
+}
+.popup{
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50% ,-50%) scale(0.1) ;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+
+}
+.popup-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% ,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #ff523f;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

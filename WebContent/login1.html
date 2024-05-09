@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Or Register</title>
+    <Link rel="stylesheet" href="login.css"></Link>
+    <Link rel="stylesheet" href="index.css"></Link> 
+    <!-- <Link rel="stylesheet" href="admin.css"></Link> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
+    " rel="stylesheet">
+</head>
+<body>
+<!--------- account-page-------->
+<div class="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/pngwing.com.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="from-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------js for toggle menu---------->
+    <script>
+        var MenuItems = documents.getElementById("MenuItems");
+        MenuItems.style.maxHeight= "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+<!-- !<------------js for toggle form-----------> 
+    <script>
+      var LoginForm = document.getElementById("LoginForm")
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("RegForm");
+          function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+ </body>
+ </html>
